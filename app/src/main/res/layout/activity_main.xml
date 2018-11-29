@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="33dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:text=""
+        android:layout_alignParentLeft="true"
+        />
+
+    <Button
+        android:id="@+id/suma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="65dp"
+        android:onClick="sumar"
+        android:text="SUMA" />
+
+    <Button
+        android:id="@+id/resta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="65dp"
+        android:onClick="restar"
+        android:text="RESTA" />
+
+    <Button
+        android:id="@+id/multi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="196dp"
+        android:layout_marginLeft="196dp"
+        android:layout_marginTop="65dp"
+        android:onClick="multiplicar"
+        android:text="MULTI" />
+
+    <Button
+        android:id="@+id/dv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="286dp"
+        android:layout_marginLeft="286dp"
+        android:layout_marginTop="65dp"
+        android:onClick="dividir"
+        android:text="DIVISION" />
+
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suma"
+        android:layout_alignStart="@+id/suma"
+        android:layout_alignLeft="@+id/suma"
+        android:onClick="button1"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/but2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/resta"
+        android:layout_alignLeft="@+id/resta"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="113dp"
+        android:onClick="button2"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/but3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suma"
+        android:layout_alignStart="@+id/multi"
+        android:layout_alignLeft="@+id/multi"
+        android:onClick="button3"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/but4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/but1"
+        android:layout_toEndOf="@+id/multi"
+        android:layout_toRightOf="@+id/multi"
+        android:onClick="button4"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/but5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/but1"
+        android:layout_alignStart="@+id/suma"
+        android:layout_alignLeft="@+id/suma"
+        android:onClick="button5"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/but6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/resta"
+        android:layout_alignLeft="@+id/resta"
+        android:layout_alignBottom="@+id/but5"
+        android:onClick="button6"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/but7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/but1"
+        android:layout_alignStart="@+id/multi"
+        android:layout_alignLeft="@+id/multi"
+        android:onClick="button7"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/but8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/but4"
+        android:layout_alignRight="@+id/but4"
+        android:layout_alignBottom="@+id/but5"
+        android:onClick="button8"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/but9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/but5"
+        android:layout_alignStart="@+id/suma"
+        android:layout_alignLeft="@+id/suma"
+        android:onClick="button9"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/but0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/but5"
+        android:layout_alignStart="@+id/resta"
+        android:layout_alignLeft="@+id/resta"
+        android:onClick="button0"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/buttonigual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/but9"
+        android:layout_toEndOf="@+id/resta"
+        android:layout_toRightOf="@+id/resta"
+        android:onClick="buttonigual"
+       android:text="=" />
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/but5"
+        android:layout_alignEnd="@+id/but4"
+        android:layout_alignRight="@+id/but4"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="Borrar"
+        android:text="C" />
+
+
+
+</RelativeLayout>
